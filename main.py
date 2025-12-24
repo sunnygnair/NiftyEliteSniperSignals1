@@ -125,6 +125,8 @@ def load_api_key():
                 return json.load(f).get("api_keys", {}).get("gemini", "")
     except: return ""
     return ""
+    
+    API_KEY = load_api_key() 
 
 # ==========================================
 # 3. BACKEND LOGIC (UNCHANGED)
@@ -372,4 +374,5 @@ def main():
             st.caption("Market might be sideways or low volume. Filters are strict to save capital.")
 
 if __name__ == "__main__":
+
     main()
