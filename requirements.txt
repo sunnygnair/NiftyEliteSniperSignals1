@@ -1,0 +1,6 @@
+streamlit
+yfinance
+google-generativeai
+pandas
+numpy
+streamlit-autorefresh
